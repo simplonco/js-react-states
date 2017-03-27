@@ -28,7 +28,7 @@ class App extends Component {
           Quand je change la valeur du champ texte ci-dessous, je change la couleur de fond du header
         </p>
         <div>
-          <label htmlFor="col"></label>
+          <label htmlFor="col">Couleur</label>
           <input name="col" type="text" value={this.state.objStyle.backgroundColor} onChange={this.changeColor.bind(this)}/>
         </div>
       </div>

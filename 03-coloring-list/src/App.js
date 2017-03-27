@@ -4,29 +4,17 @@ import './App.css';
 
 class App extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      objStyle : {backgroundColor: 'blue'},
-    };
-
-    // this.colors = [
-    //   {id:1, name:'violet', color:'#f5aafb'},
-    //   {id:1, name:'marin blue', color:'rgb(43, 77, 153)'},
-    //   {id:1, name:'pale green', color:'#aafbde'},
-    //   {id:1, name:'vermillon', color:'#fe532e'},
-    //   {id:1, name:'sky blue', color:'#82c4fa'},
-    //   {id:1, name:'salmon', color:'#fb8b8b'},
-    // ];
+  state = {
+    objStyle : {backgroundColor: 'blue'},
   }
 
   colors = [
     {id:1, name:'violet', color:'#f5aafb'},
-    {id:1, name:'marin blue', color:'rgb(43, 77, 153)'},
-    {id:1, name:'pale green', color:'#aafbde'},
-    {id:1, name:'vermillon', color:'#fe532e'},
-    {id:1, name:'sky blue', color:'#82c4fa'},
-    {id:1, name:'salmon', color:'#fb8b8b'},
+    {id:2, name:'marin blue', color:'rgb(43, 77, 153)'},
+    {id:3, name:'pale green', color:'#aafbde'},
+    {id:4, name:'vermillon', color:'#fe532e'},
+    {id:5, name:'sky blue', color:'#82c4fa'},
+    {id:6, name:'salmon', color:'#fb8b8b'},
   ]
 
   changeColor = (col) => {
@@ -46,11 +34,13 @@ class App extends Component {
           Quand je change la valeur du champ texte ci-dessous, je change la couleur de fond du header
         </p>
         <div>
-          <label htmlFor="col"></label>
           <ul className="list-contaner">
             {
               this.colors.map( item =>
-                <li style={{backgroundColor: item.color}} onClick={() => this.changeColor(item.color)}>{item.name}</li>
+                <li key={item.id} style={{backgroundColor: item.color}}
+                    onClick={() => this.changeColor(item.color)}>
+                  {item.name}
+                </li>
               )
             }
           </ul>
