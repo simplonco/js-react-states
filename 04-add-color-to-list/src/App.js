@@ -52,7 +52,7 @@ class App extends Component {
           <h2>Coloring input</h2>
         </div>
         <p className="App-intro">
-          Quand je change la valeur du champ texte ci-dessous, je change la couleur de fond du header
+          Quand je clique sur un element de la liste ci-dessous, je change la couleur de fond du header
         </p>
         <div className="container">
           <ul className="list-container">
