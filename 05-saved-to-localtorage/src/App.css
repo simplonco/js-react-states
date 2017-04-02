@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.add-container {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  color: #EEE;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.add-container, .list-container {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  color: #EEE;
+  text-transform: uppercase;
+}
+
+.list-container li {
+  list-style-type: none;
+  background-color: #DDD;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 0.2em;
+  width: 40%;
+  min-width: 120px;
+  cursor: pointer;
+}
+
+.add-container {
+  color: #444;
+  margin: 1em 0;
+  padding: 1em 0;
+  background-color: #DDD;
+  border-radius: 10px;
+}
+
+.add-container li {
+  list-style-type: none;
+  padding: 1em 0 0;
+  margin: 0.2em;
+}
+
+.add-container li h3 {
+  margin: 0;
+}
+
+.add-container li label {
+  padding: 1em;
+}
+
+.add-container li input {
+  padding: 1em;
+  border-radius: 0.25em;
+  border: 0;
+}
+
+.add-container li button {
+  background: none;
+  color: #DDD;
+  /* cursor: default; */
+  font: inherit;
+  overflow: visible;
+  padding: 0;
+  user-select: none;
+
+  background-color: #444;
+  border: 0;
+  border-radius: 0.25em;
+  height: 2.5em;
+  line-height: 2.5;
+  margin: 0.25em;
+  padding: 0 1em;
+  width: 40%;
+  min-width: 120px;
+}
+
+button:hover {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none
+}
